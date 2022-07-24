@@ -1,0 +1,37 @@
+# Computing tools, code snippets, and tips. 
+## Intro
+Use this document to annotate computational tips that you may use or that you find useful
+
+## CODE: git store credential
+
+general formula:
+```bash
+// local
+git config credential.helper store
+// global
+git config --global credential.helper store
+```
+
+
+```bash
+$ git config credential.helper store
+$ git push http://example.com/repo.git
+Username: <type your username>
+Password: <type your password>
+```
+Notice that **Password** is the code obtained from the [github access token](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+​
+
+_several days later_
+
+```bash
+$ git push http://example.com/repo.git
+[your credentials are used automatically]
+```
+
+
+## CODE: Multiple output files in rmarkdown
+
+```R
+rmarkdown::render('your.Rmd', output_format = 'all', output_dir = "your_dir")
+```

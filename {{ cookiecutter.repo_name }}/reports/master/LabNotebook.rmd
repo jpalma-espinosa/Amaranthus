@@ -1,0 +1,100 @@
+---
+# USAGE
+# This file should be compiled within its folder
+# rmarkdown::render('LabNotebook.rmd', output_format = 'all', output_dir = "../pdf")
+
+
+#COLOR DEFINITIONS
+# 74B72E  #Pear Green: Lab notebooks
+# 005780  #Mykonos Blue: Reports. Use white letter in the  cover
+# 000000  #Black
+# FFFFFF  #White
+# 383E42  #Anthracite
+params:
+  set_template: x,
+  set_csl: y
+
+
+title: "Computational Lab Notebook"
+subtitle: "{{ cookiecutter.project_name }}"
+author: "{{ cookiecutter.author_name }}"
+date: '`r paste("Last Revision: ",Sys.Date())`'
+header-includes:
+  - \usepackage{pdfpages}
+output:
+  pdf_document:
+    template: ./utils/eisvogel.latex
+    toc: true
+    number_sections: yes
+    latex_engine: xelatex
+  word_document:
+    toc: yes
+    toc_depth: '4'
+  html_document: default
+titlepage: true
+titlepage-color: "74B72E"  #Pear Green, color of lab notebooks
+titlepage-text-color: "000000" 
+titlepage-rule-color: "383E42" #Anthracite
+titlepage-rule-height: 2
+csl: ./utils/frontiers-in-neuroscience.csl
+biblio-style: "apalike"
+link-citations: true
+urlcolor: blue
+linkcolor: blue
+graphics: yes
+---
+
+
+```{r setup, include=TRUE, echo=FALSE}
+library(reticulate)
+use_virtualenv("~/Environments/insect-vision/")
+```
+
+
+
+\newpage
+
+```{r child = here::here("./rmd/information.rmd")}
+```
+
+\newpage
+
+```{r child = here::here("./reports/LabNotebook/changelog.rmd")}
+```
+
+\newpage
+
+```{r child = here::here("./reports/LabNotebook/workflow.rmd")}
+```
+
+\newpage
+
+```{r child = here::here("./reports/LabNotebook/Daily.rmd")}
+```
+
+\newpage
+
+```{r child = here::here("./reports/LabNotebook/preliminary-results.rmd")}
+```
+
+\newpage
+
+```{r child = here::here("./reports/LabNotebook/meetings.rmd")}
+```
+
+\newpage
+
+```{r child = here::here("./reports/LabNotebook/tips.rmd")}
+```
+
+\newpage
+
+```{r child = here::here("./reports/LabNotebook/papers-analysis.rmd")}
+```
+
+
+
+\newpage
+
+
+# References
