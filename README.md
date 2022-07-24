@@ -1,5 +1,5 @@
 
-![Amaranthus](./img/amaranthus1.svg)
+![Amaranthus](./img/logo.png)
 
 ## Amaranthus - A Cookiecutter template for Computational Scientific Research
 
