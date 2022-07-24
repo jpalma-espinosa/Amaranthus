@@ -1,8 +1,7 @@
 
+![Amaranthus](./img/amaranthus1.svg)
 
-$$\textcolor{#9F2B68}{\text{Amaranthus}}$$
-
-## A Cookiecutter template for Computational Scientific Research
+## Amaranthus - A Cookiecutter template for Computational Scientific Research
 
 _Finally, a folder structure and work flow that I'm proud to share!_
 
