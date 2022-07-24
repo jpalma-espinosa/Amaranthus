@@ -1,18 +1,17 @@
 
 ![Amaranthus](./img/logo.png)
 
-## Amaranthus - A Cookiecutter template for Computational Scientific Research
+## A Cookiecutter template for Computational Scientific Research
 
-_Finally, a folder structure and work flow that I'm proud to share!_
+_Finally, a workflow that I'm proud to share!_
 
 
-This template is my first true workflow for my computational neuroscientific projects.  However, it is broad enough to be applied to any computational discipline.
-This is highly based on the great [Cookiecutter Data Science project template](http://drivendata.github.io/cookiecutter-data-science/)
-
+Amaranthus is my first true workflow for my computational neuroscientific projects.  However, it is broad enough to be applied to any computational discipline.
+It is highly based on the great [Cookiecutter Data Science project template](http://drivendata.github.io/cookiecutter-data-science/)
 
 Dedicated to [Amaranta Saball](https://open.spotify.com/track/0PqaN2yyQ1QdUR6UVHLna5?si=cf80748268e549c1).
 
-### Requirements to use the Amaranthus template:
+### Requirements to use Amaranthus template:
 -----------
  - Python 2.7 or 3.5+
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
@@ -66,20 +65,7 @@ The directory structure of your new project looks like this:
 │   └── utils               <- Utilitary scripts.  See inside for more information.
 ├── test_environment.py
 └── tox.ini
-
-
 ```
-
 ## Contributing
 
-I'm working on this. If you have any idea, please, drop me an [email](mailto: javier.palma@cinv.cl) or a message over here
-
-### Installing development requirements
-------------
-
-    pip install -r requirements.txt
-
-### Running the tests
-------------
-
-    py.test tests
+As this is v1.0, there are a lot to fix and TODO. If you have any idea, please drop me an [email](javier.palma@cinv.cl) or submit an issue. I'd be more than happy to implement it.
