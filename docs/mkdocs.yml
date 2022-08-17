@@ -1,9 +1,9 @@
-site_name: Cookiecutter Data Science
-site_description: A project template and directory structure for Python data science projects.
+site_name: Javier Palma Espinosa
+site_description: A project template and directory structure for computational scientific research projects based on Python.
 site_favicon: favicon.ico
-repo_url: https://github.com/drivendata/cookiecutter-data-science
+repo_url: https://github.com/jpalma-espinosa/Amaranthus
 edit_uri: edit/master/docs/docs
-copyright: Project maintained by the friendly folks at <a target=_blanks href="https://www.drivendata.org">DrivenData</a>.
+copyright: Project maintained by Javier Palma Espinosa at <a target=_blanks href="https://github.com/jpalma-espinosa">Javier's github</a>.
 google_analytics: ['UA-54096005-4', 'auto']
 theme: cinder
 extra_css:
